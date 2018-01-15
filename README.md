@@ -4,7 +4,7 @@
 novoCaller is a Bayesian de novo variant calling algorithm that uses information from read-level data both in the pedigree and in unrelated samples. The method was extensively tested using large trio sequencing studies, and it consistently achieved over 98% specificity.
 
 ## Compile:
-g++ -o novoCaller -c source.cpp 
+g++ -o novoCaller -c novoCaller.cpp 
 
 ## Usage:
 
@@ -35,7 +35,7 @@ The ignore option is given to ignore log of 0 warning.
 
 ## Output format:
 denovo_calls.txt columns are the following:
-Rank, chromosome, position, reference allele, alternative allele, AF, rhos, priors, PP=posterior probability, AF_unrelated, gene_name
+Rank, chromosome, position, reference allele, alternative allele, AF (in samples), rhos, priors, PP=posterior probability, AF_unrelated, gene_name(s)
 
 # References
 biorx link: 
