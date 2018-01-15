@@ -21,10 +21,10 @@ g++ -o novoCaller -c source.cpp
 ### Run second layer (Python code) - uses BAM files (OPTIONAL):
 
 python -W ignore novoCaller2.py \  
--I <path to the output file from previous step (the file given in -O option)> 
--U <path to a file containing paths to the bam files from unrelated samples> 
--T <path to a file containing paths to the bam files of the trio> 
--O  <path to the output file for the second layer>
+-I <path to the output file from previous step (the file given in -O option)> \
+-U <path to a file containing paths to the bam files from unrelated samples> \
+-T <path to a file containing paths to the bam files of the trio> \
+-O <path to the output file for the second layer>
 
 The ignore option is given to ignore log of 0 warning.
 
