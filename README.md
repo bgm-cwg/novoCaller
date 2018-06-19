@@ -1,7 +1,7 @@
 # novoCaller
 ## About
 
-novoCaller is a Bayesian de novo variant calling algorithm that uses information from read-level data both in the pedigree and in unrelated samples. The method was extensively tested using large trio sequencing studies, and it consistently achieved over 98% sensitivity while generating significantly lesser false positives than other well known methods for the same sensitivity values. \
+novoCaller is a Bayesian de novo variant calling algorithm that uses information from read-level data both in the pedigree and in unrelated samples. The method was extensively tested using large trio sequencing studies, and it consistently achieved over 98% sensitivity while giving significantly more specificity than other well known methods for the same sensitivity values. \
 The method works with a vcf file alone (first layer), but it can also inspect the reads in the bam file and compute probabilities based on direction-specific (forward and reverse) reads (second layer). \
 We made the software keeping VCFv4.1 in mind. The software looks at the format field of each variant call location in the VCF file and reads the AD element. Then it extracts that part from every sample.
 
