@@ -37,7 +37,7 @@ The ignore option is given to ignore log of 0 warning.
 ### Example command line:
 
 ```
-./novoCaller -I ./all_calls.vep.vcf -O step1_out.txt -T trio_ids.txt -X 1 -P 0.005 -E 0.008 \
+./novoCaller -I ./all_calls.vep.vcf -O step1_out.txt -T trio_ids.txt -X 1 -P 0.005 -E 0.008 
 python -W ignore novoCallerBAM.py  -I step1_out.txt -U de_novo_unrelated_bams.txt -T de_novo_case_bams.txt -O denovo_calls.txt 
 ```
 
