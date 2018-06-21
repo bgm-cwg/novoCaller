@@ -7,7 +7,7 @@ We made the software keeping VCFv4.1 in mind. The software looks at the format f
 
 ## Compile:
 ```
-g++ novoCaller.cpp -o novocaller
+g++ novoCaller.cpp -o novoCaller
 ```
 
 ## Usage:
