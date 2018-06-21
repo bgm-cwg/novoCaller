@@ -7,14 +7,14 @@ We made the software keeping VCFv4.1 in mind. The software looks at the format f
 
 ## Compile:
 ```
-g++ -o novoCaller -c novoCaller.cpp 
+g++ novoCaller.cpp -o novocaller
 ```
 
 ## Usage:
 
 ### Run first layer (C++ code) - uses only VCF:
 ```
-./novoCaller1 \
+./novoCaller \
 -I <path to vcf file> \
 -O <path to output file for layer 1> \
 -T <path to file containing sample IDs of the trios, the IDs are in the order:parent1(TAB)parent2(TAB)proband> \
@@ -25,7 +25,7 @@ g++ -o novoCaller -c novoCaller.cpp
 
 ### Run second layer (Python code) - uses BAM files (OPTIONAL):
 ```
-python -W ignore novoCaller2.py \  
+python -W ignore novoCallerBAM.py \  
 -I <path to the output file from previous step (the file given in -O option)> \
 -U <path to a file containing paths to the bam files from unrelated samples> \
 -T <path to a file containing paths to the bam files of the trio> \
@@ -37,8 +37,8 @@ The ignore option is given to ignore log of 0 warning.
 ### Example command line:
 
 ```
-./novoCaller1 -I ./all_calls.vep.vcf -O step1_out.txt -T trio_ids.txt -X 1 -P 0.005 -E 0.008 \
-./novoCaller2.py  -I step1_out.txt -U de_novo_unrelated_bams.txt -T de_novo_case_bams.txt -O denovo_calls.txt 
+./novoCaller -I ./all_calls.vep.vcf -O step1_out.txt -T trio_ids.txt -X 1 -P 0.005 -E 0.008 \
+python -W ignore novoCallerBAM.py  -I step1_out.txt -U de_novo_unrelated_bams.txt -T de_novo_case_bams.txt -O denovo_calls.txt 
 ```
 
 ## Output format:
