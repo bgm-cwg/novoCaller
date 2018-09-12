@@ -2230,12 +2230,6 @@ std::ostream& operator<<(std::ostream& out,const const_mut_rate_handler& O){
 }
 
 
-double lbeta(const double a,const double b){
-	return boost::math::lgamma(a)+boost::math::lgamma(b)-boost::math::lgamma(a+b);
-}
-
-
-
 
 
 #endif
