@@ -10,7 +10,7 @@
 #include <ctime>
 #include <cmath>
 #include <limits>
-#include <boost/math/special_functions/gamma.hpp>
+#include <algorithm>
 #include <sstream>
 
 #include "definitions.h"
