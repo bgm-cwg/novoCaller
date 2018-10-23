@@ -46,4 +46,4 @@ denovo_calls.txt columns are the following:
 Rank, chromosome, position, reference allele, alternative allele, AF (in samples), rhos, priors, PP=posterior probability, AF_unrelated, gene_name(s)
 
 # References
-[link](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty749/5087716)
+Find our paper [here](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty749/5087716)
