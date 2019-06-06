@@ -45,8 +45,6 @@ python -W ignore novoCallerBAM.py  -I step1_out.txt -U de_novo_unrelated_bams.tx
 denovo_calls.txt columns are the following:
 Rank, chromosome, position, reference allele, alternative allele, AF (in samples), rhos, priors, PP=posterior probability, AF_unrelated, gene_name(s)
 
-# Contact
-Please direct any queries to anwoy.rkl@gmail.com
 
 # References
 Find our paper [here](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty749/5087716)
